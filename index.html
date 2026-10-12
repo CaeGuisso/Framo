@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Framo — Podcast, melhores momentos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-media" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9.5v5l4-2.5z"/></symbol>
+    <symbol id="i-cut" viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="M8 8.5 20 18M8 15.5 20 6"/></symbol>
+    <symbol id="i-caption" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 11h4M7 15h8M14 11h3"/></symbol>
+    <symbol id="i-audio" viewBox="0 0 24 24"><path d="M4 10v4M8 7v10M12 4v16M16 8v8M20 11v2"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V5M7.5 9.5 12 5l4.5 4.5M5 19h14"/></symbol>
+    <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 7 4 12l5 5M4 12h10a6 6 0 0 1 6 6"/></symbol>
+    <symbol id="i-redo" viewBox="0 0 24 24"><path d="m15 7 5 5-5 5M20 12H10a6 6 0 0 0-6 6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M6 6v12M19 6v12L9 12z"/></symbol>
+    <symbol id="i-fwd" viewBox="0 0 24 24"><path d="M18 6v12M5 6v12l10-6z"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+    <symbol id="i-export" viewBox="0 0 24 24"><path d="M12 15V4M7.5 8.5 12 4l4.5 4.5M5 14v5h14v-5"/></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="M8 8.5 20 18M8 15.5 20 6"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+  </defs>
+</svg>
+
+<div class="app">
+
+  <!-- Barra superior -->
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Framo">
+      <svg class="brand__mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M9 3v18M3 12h6"/><path class="brand__cut" d="M15 9.5v5l3.5-2.5z"/></svg>
+      <span class="brand__name">framo</span>
+    </a>
+    <span class="topbar__sep"></span>
+    <div class="project">
+      <h1 class="project__name">Podcast — melhores momentos</h1>
+      <span class="status-pill"><i class="dot"></i>Salvo agora</span>
+    </div>
+    <div class="topbar__actions">
+      <button class="btn btn--ghost" type="button"><svg class="icon"><use href="#i-eye"/></svg>Pré-visualizar</button>
+      <button class="btn btn--primary" type="button"><svg class="icon"><use href="#i-export"/></svg>Exportar vídeo</button>
+      <span class="avatar" title="Perfil">CG</span>
+    </div>
+  </header>
+
+  <!-- Barra de ferramentas -->
+  <nav class="rail" aria-label="Ferramentas">
+    <button class="rail__item is-active" type="button"><svg class="icon"><use href="#i-media"/></svg><span>Mídia</span></button>
+    <button class="rail__item" type="button"><svg class="icon"><use href="#i-cut"/></svg><span>Cortes</span></button>
+    <button class="rail__item" type="button"><svg class="icon"><use href="#i-caption"/></svg><span>Legendas</span></button>
+    <button class="rail__item" type="button"><svg class="icon"><use href="#i-audio"/></svg><span>Áudio</span></button>
+    <button class="rail__item" type="button"><svg class="icon"><use href="#i-sliders"/></svg><span>Ajustes</span></button>
+  </nav>
+
+  <!-- Biblioteca de mídia -->
+  <aside class="library panel" data-view="media">
+  <h2 class="panel__title">Biblioteca de mídia</h2>
+
+  <div class="pane" data-pane="media">
+    <label class="search">
+      <svg class="icon"><use href="#i-search"/></svg>
+      <input type="search" placeholder="Pesquisar arquivos" aria-label="Pesquisar arquivos">
+    </label>
+    <div class="dropzone">
+      <span class="dropzone__icon"><svg class="icon"><use href="#i-upload"/></svg></span>
+      <strong>Importe seus vídeos</strong>
+      <p>ou arraste arquivos até aqui</p>
+    </div>
+    <button class="btn btn--ghost btn--block js-wizard" type="button"><svg class="icon"><use href="#i-scissors"/></svg>Gerar cortes automáticos</button>
+    <h3 class="section-label">Arquivos importados <span class="count">1</span></h3>
+    <article class="media-card">
+      <div class="thumb">
+        <i class="thumb__glow"></i><i class="thumb__p thumb__p--a"></i><i class="thumb__p thumb__p--b"></i>
+        <span class="thumb__time">24:18</span>
+      </div>
+      <div class="media-card__body">
+        <h4>podcast-entrevista.mp4</h4>
+        <p>MP4 · 1920×1080 · 1,2 GB</p>
+      </div>
+    </article>
+    <div class="storage">
+      <div class="storage__row"><span>Armazenamento</span><span>1,2 de 10 GB</span></div>
+      <div class="storage__bar"><i style="width:12%"></i></div>
+    </div>
+  </div>
+
+  <div class="pane" data-pane="cuts">
+    <button class="btn btn--primary btn--block js-wizard" type="button"><svg class="icon"><use href="#i-scissors"/></svg>Gerar cortes automáticos</button>
+    <button class="btn btn--ghost btn--block" id="add-cut" type="button"><svg class="icon"><use href="#i-plus"/></svg>Novo corte manual</button>
+    <p class="pane__hint" id="cuts-sum"></p>
+    <ul class="cut-list" id="cut-list"></ul>
+  </div>
+
+  <div class="pane" data-pane="captions">
+    <p class="pane__hint">Personalize como as legendas aparecem na prévia.</p>
+    <div class="opt-list" id="cap-styles">
+      <button class="opt is-active" type="button" data-style="purple"><span class="opt__demo">Vamos <mark>direto</mark></span><b>Destaque roxo</b></button>
+      <button class="opt" type="button" data-style="classic"><span class="opt__demo">Vamos direto</span><b>Clássico</b></button>
+      <button class="opt" type="button" data-style="box"><span class="opt__demo opt__demo--box">Vamos direto</span><b>Caixa</b></button>
+    </div>
+    <label class="field"><span>Tamanho <output id="cap-size-out">100%</output></span><input type="range" id="cap-size" min="70" max="140" value="100"></label>
+    <label class="field"><span>Posição</span>
+      <select id="cap-pos"><option value="62">Alta</option><option value="40">Centro</option><option value="20" selected>Baixa</option></select>
+    </label>
+    <div class="field"><span>Cor do destaque</span>
+      <div class="swatches" id="cap-colors">
+        <button type="button" class="is-active" data-c="#b9a3ff" style="--c:#b9a3ff" aria-label="Roxo"></button>
+        <button type="button" data-c="#4fd1e0" style="--c:#4fd1e0" aria-label="Ciano"></button>
+        <button type="button" data-c="#ffd84d" style="--c:#ffd84d" aria-label="Amarelo"></button>
+        <button type="button" data-c="#3ecf8e" style="--c:#3ecf8e" aria-label="Verde"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="pane" data-pane="audio">
+    <p class="pane__hint">Controle o áudio do vídeo importado.</p>
+    <label class="field"><span>Volume <output id="vol-out">100%</output></span><input type="range" id="vol" min="0" max="100" value="100"></label>
+    <div class="row"><span>Silenciar</span><button class="switch" id="mute" type="button" role="switch" aria-checked="false"><i></i></button></div>
+  </div>
+
+  <div class="pane" data-pane="settings">
+    <p class="pane__hint">Ficam salvos neste navegador e valem na exportação de todos os cortes.</p>
+    <label class="field"><span>Qualidade</span>
+      <select id="set-q"><option value="1080">Full HD — 1080p</option><option value="720">HD — 720p</option></select>
+    </label>
+    <label class="field"><span>Taxa de quadros</span>
+      <select id="set-fps"><option value="24">24 FPS</option><option value="30">30 FPS</option><option value="60">60 FPS</option></select>
+    </label>
+    <div class="row"><span>Área segura</span><button class="switch" id="set-safe" type="button" role="switch"><i></i></button></div>
+    <div class="row"><span>Regra dos terços</span><button class="switch" id="set-thirds" type="button" role="switch"><i></i></button></div>
+    <h3 class="section-label">Padrões do gerador de cortes</h3>
+    <div class="field-row">
+      <label class="field"><span>Nº de cortes</span><input type="number" id="set-count" min="1" max="30"></label>
+      <label class="field"><span>Máx. (seg)</span><input type="number" id="set-max" min="5" max="900"></label>
+    </div>
+    <div class="row"><span>Perguntar ao importar</span><button class="switch" id="set-auto" type="button" role="switch"><i></i></button></div>
+    <button class="btn btn--ghost btn--block" id="set-reset" type="button">Restaurar padrões</button>
+  </div>
+</aside>
+
+  <!-- Área central -->
+  <main class="stage">
+    <div class="stage__bar">
+      <ol class="crumbs">
+        <li>Projetos</li><li>Podcast — melhores momentos</li><li aria-current="page">Corte 01</li>
+      </ol>
+      <div class="stage__tools">
+        <button class="icon-btn" type="button" aria-label="Desfazer"><svg class="icon"><use href="#i-undo"/></svg></button>
+        <button class="icon-btn" type="button" aria-label="Refazer"><svg class="icon"><use href="#i-redo"/></svg></button>
+        <span class="vsep"></span>
+        <button class="icon-btn" type="button" aria-label="Diminuir zoom"><svg class="icon"><use href="#i-minus"/></svg></button>
+        <span class="zoom">100%</span>
+        <button class="icon-btn" type="button" aria-label="Aumentar zoom"><svg class="icon"><use href="#i-plus"/></svg></button>
+      </div>
+    </div>
+
+    <section class="monitor" aria-label="Prévia do vídeo">
+      <header class="monitor__head">
+        <h2>Prévia do vídeo</h2>
+        <div class="tags"><span class="tag tag--accent">9:16</span><span class="tag">1080 × 1920</span><span class="tag">30 fps</span></div>
+      </header>
+      <div class="monitor__view">
+        <div class="screen">
+          <div class="scene">
+            <i class="scene__light"></i>
+            <i class="scene__shelf"></i>
+            <div class="person person--l"><i class="person__head"></i><i class="person__body"></i></div>
+            <div class="person person--r"><i class="person__head"></i><i class="person__body"></i></div>
+            <i class="scene__desk"></i>
+            <i class="mic mic--l"></i><i class="mic mic--r"></i>
+          </div>
+          <div class="guide guide--safe"></div>
+          <div class="guide guide--thirds"></div>
+          <p class="caption">O segredo é <mark>começar pelo</mark> final e contar <mark>a história</mark> de trás pra frente</p>
+          <span class="rec-badge">Corte 01</span>
+        </div>
+      </div>
+      <footer class="transport">
+        <span class="timecode">00:12:52<small> / 00:13:15</small></span>
+        <div class="transport__btns">
+          <button class="icon-btn" type="button" aria-label="Retroceder"><svg class="icon icon--fill"><use href="#i-back"/></svg></button>
+          <button class="play" type="button" aria-label="Reproduzir"><svg class="icon icon--fill"><use href="#i-play"/></svg></button>
+          <button class="icon-btn" type="button" aria-label="Avançar"><svg class="icon icon--fill"><use href="#i-fwd"/></svg></button>
+        </div>
+        <span class="transport__hint">Área segura ativa</span>
+      </footer>
+    </section>
+
+    <section class="timeline" aria-label="Linha do tempo">
+      <header class="timeline__head">
+        <h2>Linha do tempo</h2>
+        <span class="seq">Sequência 1</span>
+        <ul class="legend">
+          <li><i class="swatch swatch--orig"></i>Clipe original</li>
+          <li><i class="swatch swatch--cut"></i>Corte selecionado</li>
+        </ul>
+        <button class="btn btn--ghost btn--sm" type="button"><svg class="icon"><use href="#i-plus"/></svg>Adicionar faixa</button>
+      </header>
+
+      <div class="tl">
+        <div class="tl__labels">
+          <div class="tl__corner"></div>
+          <div class="tl__label"><svg class="icon"><use href="#i-video"/></svg>Vídeo 1</div>
+          <div class="tl__label"><svg class="icon"><use href="#i-audio"/></svg>Áudio 1</div>
+        </div>
+        <div class="tl__scroll">
+          <div class="tl__canvas">
+            <div class="ruler">
+              <span style="left:0">00:00</span><span style="left:12.5%">03:00</span><span style="left:25%">06:00</span><span style="left:37.5%">09:00</span><span style="left:50%">12:00</span><span style="left:62.5%">15:00</span><span style="left:75%">18:00</span><span style="left:87.5%">21:00</span>
+            </div>
+            <div class="lane">
+              <div class="clip clip--orig" style="left:1%;width:98%">
+                <span class="clip__name">podcast-entrevista.mp4</span>
+                <i class="clip__frames"></i>
+              </div>
+              <div class="clip clip--cut is-selected" style="left:52.5%;width:9.5%">
+                <span class="clip__name">Corte 01</span>
+                <i class="clip__frames"></i>
+                <i class="handle handle--l"></i><i class="handle handle--r"></i>
+              </div>
+            </div>
+            <div class="lane lane--audio">
+              <div class="clip clip--orig" style="left:1%;width:98%"><i class="wave"></i></div>
+              <div class="clip clip--cut is-selected" style="left:52.5%;width:9.5%"><i class="wave"></i></div>
+            </div>
+            <div class="playhead" style="left:56.5%"><i class="playhead__cap"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Painel de propriedades -->
+  <aside class="inspector panel">
+    <h2 class="panel__title">Configurações do corte</h2>
+    <div class="inspector__scroll">
+
+      <section class="group">
+        <h3 class="group__title">Corte selecionado</h3>
+        <div class="selected-row"><strong>Corte 01</strong><span class="badge"><i class="dot"></i>Selecionado</span></div>
+        <label class="field"><span>Nome do corte</span><input type="text" value="Corte 01" readonly></label>
+      </section>
+
+      <section class="group">
+        <h3 class="group__title">Intervalo do corte</h3>
+        <div class="field-row">
+          <label class="field"><span>Início</span><input class="mono" type="text" value="00:12:40" readonly></label>
+          <label class="field"><span>Fim</span><input class="mono" type="text" value="00:13:15" readonly></label>
+        </div>
+        <div class="duration"><span>Duração</span><strong class="mono">00:35</strong></div>
+      </section>
+
+      <section class="group">
+        <h3 class="group__title">Formato do vídeo</h3>
+        <div class="formats">
+          <button class="format is-active" type="button"><i class="ratio ratio--916"></i><b>9:16</b><small>Reels / TikTok</small></button>
+          <button class="format" type="button"><i class="ratio ratio--11"></i><b>1:1</b><small>Feed</small></button>
+          <button class="format" type="button"><i class="ratio ratio--169"></i><b>16:9</b><small>YouTube</small></button>
+        </div>
+      </section>
+
+      <section class="group">
+        <div class="group__row">
+          <h3 class="group__title">Legendas automáticas</h3>
+          <span class="switch is-on" role="presentation"><i></i></span>
+        </div>
+        <label class="field"><span>Idioma</span><select disabled><option>Português (Brasil)</option></select></label>
+        <div class="style-card">
+          <div class="style-card__preview"><span>Vamos <mark>direto</mark> ao ponto</span></div>
+          <div class="style-card__meta"><strong>Destaque roxo</strong><small>Bold · Centralizada</small></div>
+        </div>
+      </section>
+
+      <section class="group">
+        <h3 class="group__title">Exportação</h3>
+        <dl class="specs">
+          <div><dt>Qualidade</dt><dd>Full HD — 1080p</dd></div>
+          <div><dt>Formato</dt><dd>MP4</dd></div>
+          <div><dt>Taxa de quadros</dt><dd>30 FPS</dd></div>
+        </dl>
+      </section>
+    </div>
+    <footer class="inspector__foot">
+      <button class="btn btn--primary btn--block" type="button"><svg class="icon"><use href="#i-scissors"/></svg>Criar corte</button>
+    </footer>
+  </aside>
+
+  <!-- Rodapé de status -->
+  <footer class="statusbar">
+    <span class="statusbar__ok"><i class="dot dot--ok"></i>Tudo pronto</span>
+    <span class="statusbar__sep"></span>
+    <span>Framo Studio</span>
+    <span class="statusbar__note" id="status-note"></span>
+    <span class="statusbar__lang">Português (BR)</span>
+  </footer>
+</div>
+<dialog class="wizard" id="wizard" aria-labelledby="w-title">
+  <form class="wizard__box" id="wizard-form">
+    <header>
+      <h2 id="w-title">Gerar cortes automáticos</h2>
+      <p id="w-info">Diga quantos cortes você quer e o tamanho máximo de cada um.</p>
+    </header>
+    <label class="field"><span>Quantos cortes?</span><input id="w-count" type="number" min="1" max="30" required></label>
+    <div class="field"><span>Duração máxima de cada corte (segundos)</span>
+      <div class="chips" id="w-chips">
+        <button type="button" data-v="15">15s</button><button type="button" data-v="30">30s</button><button type="button" data-v="45">45s</button><button type="button" data-v="60">1 min</button><button type="button" data-v="90">1:30</button>
+      </div>
+      <input id="w-max" type="number" min="5" max="900" required>
+    </div>
+    <div class="field-row">
+      <label class="field"><span>Distribuição</span>
+        <select id="w-mode"><option value="spread">Espalhados pelo vídeo</option><option value="seq">Em sequência, do início</option></select>
+      </label>
+      <label class="field"><span>Formato</span>
+        <select id="w-format"><option>9:16</option><option>1:1</option><option>16:9</option></select>
+      </label>
+    </div>
+    <label class="check"><input type="checkbox" id="w-replace" checked> Substituir os cortes atuais</label>
+    <p class="wizard__sum" id="w-sum" role="status"></p>
+    <footer>
+      <button class="btn btn--ghost" type="button" id="w-cancel">Cancelar</button>
+      <button class="btn btn--primary" type="submit">Gerar cortes</button>
+    </footer>
+  </form>
+</dialog>
+<script src="script.js" defer></script>
+</body>
+</html>
